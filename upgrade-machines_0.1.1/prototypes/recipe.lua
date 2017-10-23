@@ -1,7 +1,7 @@
 
 data:extend({
     {
-        type = "recipe-category",
+        type = "recipe-subgroup",
         name = "upgrade-machines"
     },
     {
