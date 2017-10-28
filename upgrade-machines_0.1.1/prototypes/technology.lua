@@ -1,9 +1,3 @@
-table.insert(data.raw["technology"]["advanced-material-processing"].effects, {
-    type = "unlock-recipe",
-    recipe = "stone-to-steel-furnace"
-})
+require("technology.vanilla")
 
-table.insert(data.raw["technology"]["advanced-material-processing-2"].effects, {
-    type = "unlock-recipe",
-    recipe = "steel-to-electric-furnace"
-})
+if mods.bobplates then require("technology.bobplates") end

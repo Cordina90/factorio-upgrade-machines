@@ -6,6 +6,6 @@
     "contact": "",
     "homepage": "",
     "factorio_version": "0.15",
-    "dependencies": ["base >= 0.15"],
+    "dependencies": ["base >= 0.15", "? bobelectronics >= 0.15.2", "? bobplates >= 0.15.12"],
     "description": "This mod adds recipes to upgrade all burner stage machines to their next tier machine"
 }
