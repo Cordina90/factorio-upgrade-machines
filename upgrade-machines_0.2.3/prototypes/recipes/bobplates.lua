@@ -15,7 +15,7 @@ function addConditionalRecipe(conditionalItems, recipe)
     if not recipe.results then
         recipe.result = conditionalItems[2]
     else
-        table.insert(recipe.results, { name = conditionalItems[1], type = "item", amount = "1" })
+        table.insert(recipe.results, { name = conditionalItems[2], type = "item", amount = "1" })
     end
 
     recipe.icon = "__upgrade-machines__/graphics/icons/" .. recipe.name .. ".png"
@@ -79,7 +79,7 @@ addConditionalRecipe({ "chemical-steel-furnace", "chemical-furnace" },
                 amount = 5,
             }
         },
-        main_product = "chemical-steel-furnace",
+        main_product = "chemical-furnace",
         energy_required = 5,
         enabled = false
     })
