@@ -4,15 +4,13 @@ data:extend({
         name = "upgrade-machines",
         group = "logistics",
         order = "z",
-    },
+    }
+})
 
+addRecipe(
     {
-        type = "recipe",
         name = "burner-to-electric-drill",
         order = "a",
-        icon = "__upgrade-machines__/graphics/icons/burner-to-electric-drill.png",
-        subgroup = "upgrade-machines",
-        main_product = "",
         ingredients = {
             { "burner-mining-drill", 1 },
             { "iron-gear-wheel", 2 },
@@ -33,14 +31,13 @@ data:extend({
         },
         energy_required = 1,
         enabled = true
-    },
+    }
+)
+
+addRecipe(
     {
-        type = "recipe",
         name = "burner-to-electric-inserter",
         order = "b",
-        main_product = "",
-        icon = "__upgrade-machines__/graphics/icons/burner-to-electric-inserter.png",
-        subgroup = "upgrade-machines",
         ingredients = {
             { "electronic-circuit", 1 },
             { "burner-inserter", 1 }
@@ -48,14 +45,13 @@ data:extend({
         result = "inserter",
         energy_required = 1,
         enabled = true
-    },
+    }
+)
+
+addRecipe(
     {
-        type = "recipe",
         name = "stone-to-steel-furnace",
         order = "c",
-        main_product = "",
-        icon = "__upgrade-machines__/graphics/icons/stone-to-steel-furnace.png",
-        subgroup = "upgrade-machines",
         ingredients = {
             { "steel-plate", 6 },
             { "stone-furnace", 1 },
@@ -63,15 +59,13 @@ data:extend({
         },
         result = "steel-furnace",
         energy_required = 3,
-        enabled = false
-    },
+    }
+)
+
+addRecipe(
     {
-        type = "recipe",
         name = "steel-to-electric-furnace",
-        icon = "__upgrade-machines__/graphics/icons/steel-to-electric-furnace.png",
         order = "d",
-        main_product = "",
-        subgroup = "upgrade-machines",
         ingredients = {
             { "steel-furnace", 1 },
             { "steel-plate", 4 },
@@ -79,7 +73,54 @@ data:extend({
         },
         result = "electric-furnace",
         energy_required = 5,
-        enabled = false
     }
-})
+)
+
+addRecipe(
+    {
+        name = "pistol-to-submachine",
+        order = "d",
+        ingredients = {
+            { "iron-plate", 5},
+            { "iron-gear-wheel", 10},
+            { "pistol", 1},
+        },
+        result = "submachine-gun",
+        energy_required = 10,
+        enabled = true
+    }
+)
+
+addRecipe(
+    {
+        name = "pistol-to-shotgun",
+        order = "d",
+        ingredients = {
+            { "iron-plate", 10},
+            { "copper-plate", 5},
+            { "iron-gear-wheel", 5},
+            { "wood", 5},
+            { "pistol", 1},
+        },
+        result = "shotgun",
+        energy_required = 10,
+        enabled = true
+    }
+)
+
+addRecipe(
+    {
+        name = "pistol-to-combat-shotgun",
+        order = "d",
+        ingredients = {
+            { "iron-plate", 5},
+            { "copper-plate", 5},
+            { "steel-plate", 15},
+            { "wood", 10},
+            { "pistol", 1},
+        },
+        result = "combat-shotgun",
+        energy_required = 10,
+    }
+)
 
