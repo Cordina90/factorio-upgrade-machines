@@ -1,5 +1,3 @@
-Jelmergu = {}
-
 function addRecipe(recipe)
 
     recipe.subgroup = "upgrade-machines"
@@ -7,6 +5,7 @@ function addRecipe(recipe)
     recipe.main_product = recipe.main_product and recipe.main_product or ""
     recipe.icon = "__upgrade-machines__/graphics/icons/" .. recipe.name .. ".png"
     recipe.enabled = recipe.enabled and recipe.enabled or false
+    recipe.icon_size = recipe.icon_size and recipe.icon_size or 32
 
     data:extend({ recipe })
 end
