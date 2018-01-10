@@ -1,3 +1,6 @@
+### 0.2.6
+- Added in-game changelog
+
 ### 0.2.5
 - Update to 0.16
 - Corrected locales for pistol to (combat) shotgun
