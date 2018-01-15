@@ -1,0 +1,11 @@
+{
+    "name": "upgrade-machines",
+    "version": "0.2.6",
+    "title": "Upgrade Machines",
+    "author": "Jelmergu",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.15",
+    "dependencies": ["base >= 0.16", "? bobelectronics >= 0.15.2", "? bobplates >= 0.15.12"],
+    "description": "This mod adds recipes to upgrade all burner stage machines to their next tier machine"
+}

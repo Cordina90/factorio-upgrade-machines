@@ -1,5 +1,5 @@
 ###0.2.6
-- Added ingame changelog
+- Added in-game changelog
 - Fixed that burner mining drill used the stone furnace from burner to electric drill 
     recipe as its intermediate(#1)
     
