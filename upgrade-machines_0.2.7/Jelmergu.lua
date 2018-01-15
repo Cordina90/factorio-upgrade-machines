@@ -1,8 +1,16 @@
-local Jelmergu = {}
-Jelmergu.__index = Jelmergu
+local moduleName = Jelmergu
+local M = {
+    currentOrder = 1,
+    alphabet = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", }
+}
+Jelmergu = M
+--Jelmergu.currentOrder = 1
 
 function Jelmergu:addRecipe(recipe)
-
+    if recipe.order == nil then
+        recipe.order = self.alphabet[self.currentOrder]
+        self.currentOrder = self.currentOrder+1
+    end
     recipe.subgroup = "upgrade-machines"
     recipe.type = "recipe"
     recipe.main_product = recipe.main_product and recipe.main_product or ""
@@ -23,13 +31,15 @@ function Jelmergu:addConditionalRecipe(conditionalItems, recipe)
         end
     end
 
+    if execute ~= true then
+        return
+    end
+
     if not recipe.results then
         recipe.result = conditionalItems[2]
     else
         table.insert(recipe.results, { name = conditionalItems[2], type = "item", amount = "1" })
     end
 
-    self.addRecipe(recipe);
+    self:addRecipe(recipe);
 end
-
-return Jelmergu
