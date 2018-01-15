@@ -1,4 +1,4 @@
-addConditionalRecipe({ "mixing-furnace", "mixing-steel-furnace" },
+Jelmergu:addConditionalRecipe({ "mixing-furnace", "mixing-steel-furnace" },
     {
         name = "stone-mixing-to-steel-furnace",
         order = "c[stone-to-steel-furnace]",
@@ -11,7 +11,7 @@ addConditionalRecipe({ "mixing-furnace", "mixing-steel-furnace" },
     }
 )
 
-addConditionalRecipe({ "mixing-steel-furnace", "electric-mixing-furnace" },
+Jelmergu:addConditionalRecipe({ "mixing-steel-furnace", "electric-mixing-furnace" },
     {
         name = "steel-mixing-to-electric-furnace",
         order = "d[steel-to-electric-furnace]",
@@ -24,7 +24,7 @@ addConditionalRecipe({ "mixing-steel-furnace", "electric-mixing-furnace" },
     }
 )
 
-addConditionalRecipe({ "chemical-boiler", "chemical-steel-furnace" },
+Jelmergu:addConditionalRecipe({ "chemical-boiler", "chemical-steel-furnace" },
     {
         name = "stone-chemical-to-steel-furnace",
         order = "c[stone-mixing-to-steel-furnace]",
@@ -38,7 +38,7 @@ addConditionalRecipe({ "chemical-boiler", "chemical-steel-furnace" },
     }
 )
 
-addConditionalRecipe({ "chemical-steel-furnace", "chemical-furnace" },
+Jelmergu:addConditionalRecipe({ "chemical-steel-furnace", "chemical-furnace" },
     {
         name = "steel-chemical-to-electric-furnace",
         order = "d[steel-mixing-to-electric-furnace]",

@@ -1,3 +1,8 @@
+###0.2.6
+- Added ingame changelog
+- Fixed that burner mining drill used the stone furnace from burner to electric drill 
+    recipe as its intermediate(#1)
+    
 ### 0.2.5
 - Update to 0.16
 - Corrected locales for pistol to (combat) shotgun

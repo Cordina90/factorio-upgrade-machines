@@ -1,4 +1,7 @@
-function addRecipe(recipe)
+local Jelmergu = {}
+Jelmergu.__index = Jelmergu
+
+function Jelmergu:addRecipe(recipe)
 
     recipe.subgroup = "upgrade-machines"
     recipe.type = "recipe"
@@ -10,7 +13,7 @@ function addRecipe(recipe)
     data:extend({ recipe })
 end
 
-function addConditionalRecipe(conditionalItems, recipe)
+function Jelmergu:addConditionalRecipe(conditionalItems, recipe)
 
     local execute = true
     for index, cItem in next, conditionalItems do
@@ -26,6 +29,7 @@ function addConditionalRecipe(conditionalItems, recipe)
         table.insert(recipe.results, { name = conditionalItems[2], type = "item", amount = "1" })
     end
 
-    addRecipe(recipe);
-
+    self.addRecipe(recipe);
 end
+
+return Jelmergu

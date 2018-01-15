@@ -7,10 +7,9 @@ data:extend({
     }
 })
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "burner-to-electric-drill",
-        order = "a",
         ingredients = {
             { "burner-mining-drill", 1 },
             { "iron-gear-wheel", 2 },
@@ -29,72 +28,68 @@ addRecipe(
                 amount = 1
             },
         },
-        energy_required = 1,
+        main_product = "electric-mining-drill",
+        energy_required = 1.1,
         enabled = true
     }
 )
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "burner-to-electric-inserter",
-        order = "b",
         ingredients = {
             { "electronic-circuit", 1 },
             { "burner-inserter", 1 }
         },
         result = "inserter",
-        energy_required = 1,
+        energy_required = 1.1,
         enabled = true
     }
 )
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "stone-to-steel-furnace",
-        order = "c",
         ingredients = {
             { "steel-plate", 6 },
             { "stone-furnace", 1 },
             { "stone-brick", 9 }
         },
         result = "steel-furnace",
-        energy_required = 3,
+        energy_required = 3.1,
     }
 )
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "steel-to-electric-furnace",
-        order = "d",
         ingredients = {
             { "steel-furnace", 1 },
             { "steel-plate", 4 },
             { "advanced-circuit", 5 }
         },
         result = "electric-furnace",
-        energy_required = 5,
+        energy_required = 5.1,
     }
 )
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "pistol-to-submachine",
-        order = "d",
         ingredients = {
             { "iron-plate", 5},
             { "iron-gear-wheel", 10},
             { "pistol", 1},
         },
         result = "submachine-gun",
-        energy_required = 10,
+        energy_required = 10.1,
         enabled = true
     }
 )
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "pistol-to-shotgun",
-        order = "d",
         ingredients = {
             { "iron-plate", 10},
             { "copper-plate", 5},
@@ -103,15 +98,14 @@ addRecipe(
             { "pistol", 1},
         },
         result = "shotgun",
-        energy_required = 10,
+        energy_required = 10.1,
         enabled = true
     }
 )
 
-addRecipe(
+Jelmergu:addRecipe(
     {
         name = "pistol-to-combat-shotgun",
-        order = "d",
         ingredients = {
             { "iron-plate", 5},
             { "copper-plate", 5},
@@ -120,7 +114,7 @@ addRecipe(
             { "pistol", 1},
         },
         result = "combat-shotgun",
-        energy_required = 10,
+        energy_required = 10.1,
     }
 )
 
