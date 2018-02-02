@@ -29,7 +29,7 @@ Jelmergu:addRecipe(
             },
         },
         main_product = "electric-mining-drill",
-        energy_required = 1.1,
+        energy_required = 1,
         enabled = true
     }
 )
@@ -42,7 +42,7 @@ Jelmergu:addRecipe(
             { "burner-inserter", 1 }
         },
         result = "inserter",
-        energy_required = 1.1,
+        energy_required = 1,
         enabled = true
     }
 )
@@ -56,7 +56,7 @@ Jelmergu:addRecipe(
             { "stone-brick", 9 }
         },
         result = "steel-furnace",
-        energy_required = 3.1,
+        energy_required = 3,
     }
 )
 
@@ -69,7 +69,7 @@ Jelmergu:addRecipe(
             { "advanced-circuit", 5 }
         },
         result = "electric-furnace",
-        energy_required = 5.1,
+        energy_required = 5,
     }
 )
 
@@ -82,7 +82,7 @@ Jelmergu:addRecipe(
             { "pistol", 1},
         },
         result = "submachine-gun",
-        energy_required = 10.1,
+        energy_required = 10,
         enabled = true
     }
 )
@@ -98,7 +98,7 @@ Jelmergu:addRecipe(
             { "pistol", 1},
         },
         result = "shotgun",
-        energy_required = 10.1,
+        energy_required = 10,
         enabled = true
     }
 )
@@ -114,7 +114,7 @@ Jelmergu:addRecipe(
             { "pistol", 1},
         },
         result = "combat-shotgun",
-        energy_required = 10.1,
+        energy_required = 10,
     }
 )
 

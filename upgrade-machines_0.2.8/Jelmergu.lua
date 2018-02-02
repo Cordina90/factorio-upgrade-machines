@@ -11,6 +11,7 @@ function Jelmergu:addRecipe(recipe)
         recipe.order = self.alphabet[self.currentOrder]
         self.currentOrder = self.currentOrder+1
     end
+    recipe.allow_as_intermediate = false
     recipe.subgroup = "upgrade-machines"
     recipe.type = "recipe"
     recipe.main_product = recipe.main_product and recipe.main_product or ""

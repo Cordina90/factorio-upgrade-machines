@@ -1,8 +1,16 @@
+###0.2.8
+- Fixed that recipes were used as intermediates
+- Returned the crafting time to the correct time
+
+###0.2.7
+- Added in-game changelog
+- Fixed that burner to electric drill was used as intermediate of burner mining drill recipe
+
 ###0.2.6
 - Added in-game changelog
 - Fixed that burner mining drill used the stone furnace from burner to electric drill 
     recipe as its intermediate(#1)
-    
+
 ### 0.2.5
 - Update to 0.16
 - Corrected locales for pistol to (combat) shotgun
