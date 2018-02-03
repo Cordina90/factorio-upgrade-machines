@@ -1,3 +1,6 @@
 require ("recipes.vanilla")
 
-if mods.bobplates then require ("recipes.bobplates") end
+if mods.bobplates then
+    log("detected bob plates")
+    require ("recipes.bobplates")
+end
