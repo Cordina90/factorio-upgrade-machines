@@ -18,8 +18,8 @@ function Jelmergu:addRecipe(recipe)
     recipe.icon = "__upgrade-machines__/graphics/icons/" .. recipe.name .. ".png"
     recipe.enabled = recipe.enabled and recipe.enabled or false
     recipe.icon_size = recipe.icon_size and recipe.icon_size or 32
-    recipe.expensive = self:makeExpensive(recipe)
-
+    recipe = self:convertToNormalAndExpensive(recipe)
+    var_dump({recipe, data.raw.recipe['electric-mining-drill']})
     data:extend({ recipe })
 end
 
@@ -67,32 +67,50 @@ function Jelmergu:addConditionalTechnology(tech, recipeUnlock, alternativeTech)
 
 end
 
-function Jelmergu:makeExpensive(recipe)
+function Jelmergu:convertToNormalAndExpensive(recipe)
     if recipe.expensive == false then
-        log(recipe.name)
-        return nil
-    end
-    
-    local expensive = recipe.expensive ~= nil and recipe.expensive or {}
-
-    if expensive.results == nil and recipe.results ~= nil then
-        expensive.results = self:doubleTableExeptFirst(recipe.results)
-    elseif expensive.result == nil then
-        expensive.result = recipe.result
+        var_dump(recipe.name)
+        return recipe
     end
 
-    expensive.ingredients = self:doubleTableExeptFirst(recipe.ingredients)
-    expensive.energy_required = expensive.energy_required ~= nil and expensive.energy_required or recipe.energy_required
-    expensive.enabled = expensive.enabled and expensive.enabled or recipe.enabled
+    local normal = {}
+    local expensive = {}
 
-    return expensive
+    normal.allow_as_intermediate = recipe.allow_as_intermediate
+    expensive.allow_as_intermediate = normal.allow_as_intermediate
+    normal.ingredients = table.deepcopy(recipe.ingredients)
+    var_dump(normal, recipe.ingredients)
+    normal.main_product = recipe.main_product
+    expensive.ingredients = self:doubleTableExeptFirst(normal.ingredients)
+
+    if normal.results == nil and recipe.results ~= nil then
+        normal.results = table.deepcopy(recipe.results)
+        expensive.results = self:doubleTableExeptFirst(normal.results)
+    elseif normal.result == nil then
+        normal.result, recipe.result = recipe.result, nil
+        expensive.result = normal.result
+    end
+    normal.energy_required, recipe.energy_required = recipe.energy_required, nil
+    expensive.energy_required = normal.energy_required
+    normal.enabled, recipe.enabled = recipe.enabled, nil
+    expensive.enabled = normal.enabled
+
+    recipe = table.unsetKeys(recipe, {"allow_as_intermediate", "ingredients", "main_product", "results", "result", "energy_required", "enabled"})
+
+
+    recipe.normal = normal
+    recipe.expensive = expensive
+    var_dump(recipe)
+    return recipe
+
 end
-
-
 
 function Jelmergu:doubleTableExeptFirst (origin)
     local result = {}
-    for k,v in pairs(origin) do
+    local r
+    local o = table.deepcopy(origin)
+    var_dump(o)
+    for k,v in pairs(o) do
         if k ~= 1 then -- assume the first ingredient is the machine to upgrade
             if v.count ~= nil then
                 v.count = v.count * 2
@@ -106,5 +124,6 @@ function Jelmergu:doubleTableExeptFirst (origin)
             table.insert(result, v)
         end
     end
+
     return result
 end

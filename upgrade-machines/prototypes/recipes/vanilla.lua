@@ -7,39 +7,31 @@ data:extend({
     }
 })
 
-Jelmergu:addRecipe(
-    {
-        name = "burner-to-electric-drill",
-        expensive = {
-            energy_required = 2,
-            results = {
-                { "electric-mining-drill", 1 },
-                { "stone-furnace", 2},
-            },
+Jelmergu:addRecipe({
+    name = "burner-to-electric-drill",
+    enabled = true,
+    expensive = true,
+    ingredients = {
+        { "burner-mining-drill", 1 },
+        { "iron-gear-wheel", 2 },
+        { "iron-plate", 7 },
+        { "electronic-circuit", 3 }
+    },
+    results = {
+        {
+            type = "item",
+            name = "electric-mining-drill",
+            amount = 1
         },
-        ingredients = {
-            { "burner-mining-drill", 1 },
-            { "iron-gear-wheel", 2 },
-            { "iron-plate", 7 },
-            { "electronic-circuit", 3 }
+        {
+            type = "item",
+            name = "stone-furnace",
+            amount = 1
         },
-        results = {
-            {
-                type = "item",
-                name = "electric-mining-drill",
-                amount = 1
-            },
-            {
-                type = "item",
-                name = "stone-furnace",
-                amount = 1
-            },
-        },
-        main_product = "electric-mining-drill",
-        energy_required = 2,
-        enabled = true
-    }
-)
+    },
+    main_product = "electric-mining-drill",
+    energy_required = 1,
+})
 
 Jelmergu:addRecipe(
     {
@@ -93,7 +85,6 @@ Jelmergu:addRecipe(
         },
         result = "submachine-gun",
         energy_required = 10,
-        enabled = true
     }
 )
 
@@ -110,7 +101,6 @@ Jelmergu:addRecipe(
         },
         result = "shotgun",
         energy_required = 10,
-        enabled = true
     }
 )
 

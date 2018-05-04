@@ -1,3 +1,13 @@
+table.insert(data.raw["technology"]["military"].effects, {
+    type = "unlock-recipe",
+    recipe = "pistol-to-submachine"
+})
+
+table.insert(data.raw["technology"]["military"].effects, {
+    type = "unlock-recipe",
+    recipe = "pistol-to-shotgun"
+})
+
 table.insert(data.raw["technology"]["advanced-material-processing"].effects, {
     type = "unlock-recipe",
     recipe = "stone-to-steel-furnace"
