@@ -1,8 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.16.11
+Date: 30. 04. 2018
+  Bug fix:
+    - Fixed conversion recipe's would not be unlocked
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.10
+Date: 25. 02. 2018
+  Bug fix:
+    - Fixed that expensive mode recipes were used in normal mode
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.9
 Date: 04. 02. 2018
+  Fixes:
+    - Fixed 'no released version' in mod portal
   General:
-    - Added expensive mode recipe variants(only applicable on steel-to-electric-furnace)
+    - Added expensive mode recipe variants(only applicable on steel-to-electric-furnace and burner-to-electric-drill)
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
