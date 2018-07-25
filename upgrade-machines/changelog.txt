@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.16.12
+Date:
+  Fixes:
+    - Fixed recipe of burner to electric drill was more expensive then the actual drill when playing with Bob's mods
+
+---------------------------------------------------------------------------------------------------
 Version: 0.16.11
 Date: 30. 04. 2018
   Bug fix:
