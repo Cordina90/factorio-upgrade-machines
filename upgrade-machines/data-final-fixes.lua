@@ -10,6 +10,4 @@ if data.raw.recipe["basic-circuit-board"] then
         { "basic-circuit-board", 3},
     }
 
-
 end
-
