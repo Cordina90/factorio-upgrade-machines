@@ -19,6 +19,7 @@ function Jelmergu:addRecipe(recipe)
     recipe.enabled = recipe.enabled and recipe.enabled or false
     recipe.icon_size = recipe.icon_size and recipe.icon_size or 32
     recipe = self:convertToNormalAndExpensive(recipe)
+    var_dump({recipe, data.raw.recipe['electric-mining-drill']})
     data:extend({ recipe })
 end
 

@@ -1,9 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.12
-Date:
-  Fixes:
+Date: 10. 02. 2018
+  Bug fix:
     - Fixed recipe of burner to electric drill was more expensive then the actual drill when playing with Bob's mods
-
+  New features:
+    - Armor recipes
+  New Recipes:
+    - Light to Heavy armor
+    - Heavy to Modular armor
+    - Modular to Power armor
+    - Power to Power armor MK2
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.11
 Date: 30. 04. 2018
