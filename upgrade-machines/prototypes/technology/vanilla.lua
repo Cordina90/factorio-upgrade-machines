@@ -33,7 +33,7 @@ table.insert(data.raw["technology"]["power-armor"].effects, {
     recipe = "modular-to-power-armor"
 })
 
-table.insert(data.raw["technology"]["power-armor-2"].effects, {
+table.insert(data.raw["technology"]["power-armor-mk2"].effects, {
     type = "unlock-recipe",
     recipe = "power-to-power-armor-mk2"
 })

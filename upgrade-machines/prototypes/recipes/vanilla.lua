@@ -121,6 +121,40 @@ Jelmergu:addRecipe(
 
 Jelmergu:addRecipe(
         {
+            name = "light-to-heavy-armor",
+            ingredients = {
+                {"light-armor", 1},
+                {"copper-plate", 100},
+                {"steel-plate", 50}
+            },
+            results = {
+                {"heavy-armor", 1},
+                {"iron-plate", 40},
+            },
+            expensive = false,
+            energy_required = 8
+
+        }
+)
+
+Jelmergu:addRecipe(
+        {
+            name = "heavy-to-modular-armor",
+            ingredients = {
+                {"heavy-armor", 1},
+                {"advanced-circuit", 30},
+            },
+            results = {
+                {"modular-armor", 1},
+                {"copper-plate", 100},
+            },
+            expensive = false,
+            energy_required = 15
+        }
+)
+
+Jelmergu:addRecipe(
+        {
             name = "modular-to-power-armor",
             ingredients = {
                 {"modular-armor", 1},
@@ -154,38 +188,3 @@ Jelmergu:addRecipe(
 
         }
 )
-
-Jelmergu:addRecipe(
-        {
-            name = "light-to-heavy-armor",
-            ingredients = {
-                {"light-armor", 1},
-                {"copper-plate", 100},
-                {"steel-plate", 50}
-            },
-            results = {
-                {"heavy-armor", 1},
-                {"iron-plate", 40},
-            },
-            expensive = false,
-            energy_required = 8
-
-        }
-)
-
-Jelmergu:addRecipe(
-        {
-            name = "heavy-to-modular-armor",
-            ingredients = {
-                {"heavy-armor", 1},
-                {"advanced-circuit", 30},
-            },
-            results = {
-                {"modular-armor", 1},
-                {"copper-plate", 100},
-            },
-            expensive = false,
-            energy_required = 15
-        }
-)
-
