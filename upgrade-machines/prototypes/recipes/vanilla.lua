@@ -30,7 +30,7 @@ Jelmergu:addRecipe({
         },
     },
     main_product = "electric-mining-drill",
-    energy_required = 1,
+    energy_required = 2,
 })
 
 Jelmergu:addRecipe(
@@ -42,7 +42,7 @@ Jelmergu:addRecipe(
                 { "electronic-circuit", 1 }
             },
             result = "inserter",
-            energy_required = 1,
+            energy_required = 0.5,
             enabled = true
         }
 )
@@ -186,5 +186,42 @@ Jelmergu:addRecipe(
             expensive = false,
             energy_required = 25
 
+        }
+)
+
+Jelmergu:addRecipe(
+        {
+            name = "boiler-to-heat-exchanger",
+            ingredients = {
+                {"boiler", 2},
+                {"pipe", 2},
+                {"copper-plate", 100},
+                {"steel-plate", 10}
+
+            },
+            results = {
+                {"heat-exchanger", 1},
+                {"stone-furnace", 2},
+            },
+            expensive = false,
+            icon_size = 64,
+            energy_required = 3
+        }
+)
+
+Jelmergu:addRecipe(
+        {
+            name = "steam-engine-to-steam-turbine",
+            ingredients = {
+                {"steam-engine", 3},
+                {"pipe", 5},
+                {"copper-plate", 50},
+                {"iron-gear-wheel", 11}
+
+            },
+            icon_size = 64,
+            result = "steam-turbine",
+            expensive = false,
+            energy_required = 3
         }
 )

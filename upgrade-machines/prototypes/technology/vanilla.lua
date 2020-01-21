@@ -37,3 +37,11 @@ table.insert(data.raw["technology"]["power-armor-mk2"].effects, {
     type = "unlock-recipe",
     recipe = "power-to-power-armor-mk2"
 })
+table.insert(data.raw["technology"]["nuclear-power"].effects, {
+    type = "unlock-recipe",
+    recipe = "boiler-to-heat-exchanger"
+})
+table.insert(data.raw["technology"]["nuclear-power"].effects, {
+    type = "unlock-recipe",
+    recipe = "steam-engine-to-steam-turbine"
+})
