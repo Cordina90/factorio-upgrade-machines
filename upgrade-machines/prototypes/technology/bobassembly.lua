@@ -1,0 +1,1 @@
+Jelmergu:addConditionalTechnology("basic-automation", "burner-assembling-to-assembling-machine-1", "automation")
