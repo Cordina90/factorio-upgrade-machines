@@ -30,9 +30,9 @@ end
 
 
 function var_dump(table)
-    if settings.startup.upgrade_machines_debug == nil or settings.startup.upgrade_machines_debug.value ~= true then
-        return
-    end
+    --if settings.startup.upgrade_machines_debug == nil or settings.startup.upgrade_machines_debug.value ~= true then
+    --    return
+    --end
 
     if game ~= nil then -- during control stage
         game.print(serpent.block(table))

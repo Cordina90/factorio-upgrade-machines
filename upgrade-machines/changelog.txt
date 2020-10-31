@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 31. 10. 2020
+  General:
+    - Update for 1.0
+  New Recipes:
+    - Burner assembling machine to Assembling machine 1 (Bob's mods)
+---------------------------------------------------------------------------------------------------
+Version: 0.18.1
+Date: 24. 01. 2020
+  Bug fix:
+    - Fix that Pistol to Combat shotgun never got unlocked
+  New Recipes:
+    - Filter inserter to Stack filter inserter
+---------------------------------------------------------------------------------------------------
 Version: 0.18.0
 Date: 21. 01. 2020
   General:
@@ -99,10 +113,10 @@ Date: 28. 10. 2017
   Extramod support:
     - Add Bobs Plates support with new recipes
   New recipes:
-    - Mixing to Steel Mixing furnace
-    - Steel Mixing to Electric Mixing furnace
-    - Chemical to Steel Chemical furnace
-    - Steel Chemical to Electric Chemical furnace
+    - Mixing to Steel Mixing furnace (Bob's mods)
+    - Steel Mixing to Electric Mixing furnace (Bob's mods)
+    - Chemical to Steel Chemical furnace (Bob's mods)
+    - Steel Chemical to Electric Chemical furnace (Bob's mods)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 08. 10. 2017

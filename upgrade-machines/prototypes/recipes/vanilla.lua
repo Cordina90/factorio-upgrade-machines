@@ -106,13 +106,10 @@ Jelmergu:addRecipe(
 
 Jelmergu:addRecipe(
         {
-            name = "pistol-to-combat-shotgun",
+            name = "shotgun-to-combat-shotgun",
             ingredients = {
                 { "pistol", 1 },
-                { "iron-plate", 5 },
-                { "copper-plate", 5 },
-                { "steel-plate", 15 },
-                { "wood", 10 },
+                { "steel-plate", 14 },
             },
             result = "combat-shotgun",
             energy_required = 10,
@@ -186,6 +183,57 @@ Jelmergu:addRecipe(
             expensive = false,
             energy_required = 25
 
+        }
+)
+
+Jelmergu:addRecipe(
+        {
+            name = "light-to-heavy-armor",
+            ingredients = {
+                {"light-armor", 1},
+                {"copper-plate", 100},
+                {"steel-plate", 50}
+            },
+            results = {
+                {"heavy-armor", 1},
+                {"iron-plate", 40},
+            },
+            expensive = false,
+            energy_required = 8
+
+        }
+)
+
+Jelmergu:addRecipe(
+        {
+            name = "heavy-to-modular-armor",
+            ingredients = {
+                {"heavy-armor", 1},
+                {"advanced-circuit", 30},
+            },
+            results = {
+                {"modular-armor", 1},
+                {"copper-plate", 100},
+            },
+            expensive = false,
+            energy_required = 15
+        }
+)
+
+Jelmergu:addRecipe(
+        {
+            name = "filter-inserter-to-stack-filter-inserter",
+            ingredients = {
+                {"filter-inserter", 1},
+                {"advanced-circuit", 1},
+                {"electronic-circuit", 16},
+                {"iron-gear-wheel", 15}
+
+            },
+            icon_size = 64,
+            result = "stack-filter-inserter",
+            expensive = false,
+            energy_required = 3
         }
 )
 

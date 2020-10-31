@@ -9,5 +9,8 @@ if data.raw.recipe["basic-circuit-board"] then
         { "iron-plate", 7 },
         { "basic-circuit-board", 3},
     }
-
+    data.raw.recipe["burner-assembling-to-assembling-machine-1"].ingredients = {
+        { "burner-assembling-machine", 1 },
+        { "basic-circuit-board", 3 },
+    }
 end
