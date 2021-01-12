@@ -108,7 +108,7 @@ Jelmergu:addRecipe(
         {
             name = "shotgun-to-combat-shotgun",
             ingredients = {
-                { "pistol", 1 },
+                { "shotgun", 1 },
                 { "steel-plate", 14 },
             },
             result = "combat-shotgun",
