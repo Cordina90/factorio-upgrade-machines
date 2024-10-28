@@ -1,4 +1,5 @@
 local moduleName = Jelmergu
+local path = "__upgrade__"
 local M = {
     currentOrder = 1,
     alphabet = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", }
@@ -12,13 +13,13 @@ function Jelmergu:addRecipe(recipe)
         self.currentOrder = self.currentOrder+1
     end
     recipe.allow_as_intermediate = false
-    recipe.subgroup = "upgrade-machines"
     recipe.type = "recipe"
+    recipe.subgroup = "upgrade-machines"
     recipe.main_product = recipe.main_product and recipe.main_product or ""
-    recipe.icon = "__upgrade-machines__/graphics/icons/" .. recipe.name .. ".png"
+    recipe.icon = path .. "/graphics/icons/" .. recipe.name .. ".png"
     recipe.enabled = recipe.enabled and recipe.enabled or false
     recipe.icon_size = recipe.icon_size and recipe.icon_size or 32
-    recipe = self:convertToNormalAndExpensive(recipe)
+    --recipe = self:convertToNormalAndExpensive(recipe)
     --var_dump({recipe, data.raw.recipe['electric-mining-drill']})
     data:extend({ recipe })
 end
@@ -81,14 +82,14 @@ function Jelmergu:convertToNormalAndExpensive(recipe)
     normal.ingredients = table.deepcopy(recipe.ingredients)
     --var_dump(normal, recipe.ingredients)
     normal.main_product = recipe.main_product
-    expensive.ingredients = self:doubleTableExeptFirst(normal.ingredients)
+    --expensive.ingredients = self:doubleTableExeptFirst(normal.ingredients)
 
     if normal.results == nil and recipe.results ~= nil then
         normal.results = table.deepcopy(recipe.results)
-        expensive.results = self:doubleTableExeptFirst(normal.results)
+        --expensive.results = self:doubleTableExeptFirst(normal.results)
     elseif normal.result == nil then
         normal.result, recipe.result = recipe.result, nil
-        expensive.result = normal.result
+        --expensive.result = normal.result
     end
     normal.energy_required, recipe.energy_required = recipe.energy_required, nil
     expensive.energy_required = normal.energy_required
