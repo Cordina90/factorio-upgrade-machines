@@ -51,7 +51,3 @@ table.insert(data.raw["technology"]["nuclear-power"].effects, {
     type = "unlock-recipe",
     recipe = "steam-engine-to-steam-turbine"
 })
-table.insert(data.raw["technology"]["stack-inserter"].effects, {
-    type = "unlock-recipe",
-    recipe = "filter-inserter-to-stack-filter-inserter"
-})
