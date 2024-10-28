@@ -10,7 +10,6 @@ Jelmergu:addRecipe(
     {
         type = "recipe",
         name = "burner-to-electric-inserter",
-        enabled = true,
         energy_required = 0.5,
         ingredients =
         {
@@ -26,8 +25,6 @@ Jelmergu:addRecipe(
     {
         type = "recipe",
         name = "burner-to-electric-drill",
-        enabled = true,
-        expensive = true,
         ingredients = {
             { type = "item", name = "burner-mining-drill", amount = 1 },
             { type = "item", name = "iron-gear-wheel", amount = 2 },
@@ -63,12 +60,10 @@ Jelmergu:addRecipe(
             { type = "item", name = "steel-furnace", amount = 1 }
         },
         energy_required = 3,
-        enabled = false
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "steel-to-electric-furnace",
         ingredients = {
             { type = "item", name = "steel-furnace", amount = 1 },
@@ -83,7 +78,6 @@ Jelmergu:addRecipe(
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "pistol-to-submachine",
         ingredients = {
             { type = "item", name = "pistol", amount = 1 },
@@ -98,7 +92,6 @@ Jelmergu:addRecipe(
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "pistol-to-shotgun",
         ingredients = {
             { type = "item", name = "pistol", amount = 1 },
@@ -116,7 +109,6 @@ Jelmergu:addRecipe(
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "shotgun-to-combat-shotgun",
         ingredients = {
             { type = "item", name = "shotgun", amount = 1 },
@@ -130,7 +122,6 @@ Jelmergu:addRecipe(
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "light-to-heavy-armor",
         ingredients = {
             { type = "item", name = "light-armor", amount = 1 },
@@ -141,13 +132,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "heavy-armor", amount = 1 },
             { type = "item", name = "iron-plate", amount = 40 },
         },
-        energy_required = 8
-
+        energy_required = 8,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "heavy-to-modular-armor",
         ingredients = {
             { type = "item", name = "heavy-armor", amount = 1 },
@@ -157,12 +146,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "modular-armor", amount = 1 },
             { type = "item", name = "copper-plate", amount = 100 },
         },
-        energy_required = 15
+        energy_required = 15,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "modular-to-power-armor",
         ingredients = {
             { type = "item", name = "modular-armor",        amount = 1 },
@@ -174,12 +162,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "power-armor", amount = 1 },
             { type = "item", name = "steel-plate", amount = 10 }
         },
-        energy_required = 20
+        energy_required = 20,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "power-to-power-armor-mk2",
         ingredients = {
             { type = "item", name = "power-armor", amount = 1 },
@@ -190,12 +177,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "power-armor-mk2", amount = 1 },
             { type = "item", name = "electric-engine-unit", amount = 20 },
         },
-        energy_required = 25
+        energy_required = 25,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "light-to-heavy-armor",
         ingredients = {
             { type = "item", name = "light-armor", amount = 1 },
@@ -206,12 +192,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "heavy-armor", amount = 1 },
             { type = "item", name = "iron-plate", amount = 40 },
         },
-        energy_required = 8
+        energy_required = 8,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "heavy-to-modular-armor",
         ingredients = {
             { type = "item", name = "heavy-armor", amount = 1 },
@@ -221,12 +206,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "modular-armor", amount = 1 },
             { type = "item", name = "copper-plate", amount = 100 },
         },
-        energy_required = 15
+        energy_required = 15,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "boiler-to-heat-exchanger",
         ingredients = {
             { type = "item", name = "boiler", amount = 2 },
@@ -240,12 +224,11 @@ Jelmergu:addRecipe(
             { type = "item", name = "stone-furnace", amount = 2 },
         },
         icon_size = 64,
-        energy_required = 3
+        energy_required = 3,
     }
 )
 Jelmergu:addRecipe(
     {
-        type = "recipe",
         name = "steam-engine-to-steam-turbine",
         ingredients = {
             { type = "item", name = "steam-engine", amount = 3 },
@@ -258,6 +241,6 @@ Jelmergu:addRecipe(
         results = {
             { type = "item", name = "steam-turbine", amount = 1 }
         },
-        energy_required = 3
+        energy_required = 3,
     }
 )
