@@ -12,8 +12,14 @@ table.insert(data.raw["technology"]["military-3"].effects, {
     type = "unlock-recipe",
     recipe = "shotgun-to-combat-shotgun"
 })
-
-
+table.insert(data.raw["technology"]["electric-mining-drill"].effects, {
+    type = "unlock-recipe",
+    recipe = "burner-to-electric-drill"
+})
+table.insert(data.raw["technology"]["electronics"].effects, {
+    type = "unlock-recipe",
+    recipe = "burner-to-electric-inserter"
+})
 table.insert(data.raw["technology"]["advanced-material-processing"].effects, {
     type = "unlock-recipe",
     recipe = "stone-to-steel-furnace"
@@ -51,3 +57,8 @@ table.insert(data.raw["technology"]["nuclear-power"].effects, {
     type = "unlock-recipe",
     recipe = "steam-engine-to-steam-turbine"
 })
+--[[
+table.insert(data.raw["technology"]["bulk-inserter"].effects, {
+    type = "unlock-recipe",
+    recipe = "filter-inserter-to-bulk-filter-inserter"
+})]]
